@@ -1,8 +1,5 @@
 FROM n8nio/n8n:1.48.0
 
-ARG ENCRYPTIONKEY
-ENV N8N_ENCRYPTION_KEY=$ENCRYPTIONKEY
-
 RUN apk add --update graphicsmagick tzdata
 
 USER root
